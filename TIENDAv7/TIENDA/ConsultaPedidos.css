@@ -1,0 +1,44 @@
+
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    font-size:small;
+    width:50%;
+    margin-left:500px;
+    margin-top:30px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+  .producto{
+    font-size:15px; margin-left:-180px; font-weight: bold; font-family:'Trirong', sans-serif;
+  }
+
+  #date{
+    font-size:15px;
+    width:130px;
+  }
+
+  .fin{
+    margin-left:-165px;
+    font-size:15px;
+    font-weight: bold; font-family:'Trirong', sans-serif;
+  }
+
+  .consulta1{
+    margin-left:500px;
+    margin-top:-200px;
+    font-size:medium;
+  }
+
