@@ -1,0 +1,92 @@
+
+
+
+.nombreShop{
+    width:1000px;
+    height:300px;
+    margin-left:150px;
+    margin-top:30px;
+    border-radius: 20%;
+    background-color:#E7F3FF;
+    text-align: center;
+
+}
+
+.formularioReg{
+    width:600px;
+    height:800px;
+margin-left:350px;
+margin-top:10px;
+border-radius: 3%;
+background-color:#E7F3FF;
+text-align: center;
+}
+
+h5.regnosotros{
+margin-top:20px;
+}
+
+.nom{
+    margin-top:30px;
+    margin-left: 10px;
+}
+
+.nom2{
+    margin-left: -55px;
+}
+
+.apat{
+    margin-left: -40px;
+}
+
+.amat{
+    margin-left: -45px;
+}
+
+.email{
+    margin-left:-65px;
+
+}
+
+#email{
+    width:300px;
+}
+
+#usuario{
+    width:10px;
+}
+
+.roles{
+    width: 150px;
+}
+
+.fn{
+    margin-left:30px
+}
+
+#avatar{
+    border: 5px;
+    border-color: black;
+    background-color: black;
+}
+
+
+
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
