@@ -62,7 +62,7 @@ error:function (){}
 <body>
 
 <main>
-  <form class="nombreShop" style="height:100px; text-align:center; padding-top:20px; margin-left:250px;">
+  <form class="nombreShop" style="height:100px; text-align:center; padding-top:20px; margin-left:250px; margin-top: 5px;">
 
    <h1 class="shopReg" style="font-family: Sofia, sans-serif; margin-top:4px;">Bienvenid@ a Shopping ♥</h1>
    <br></br>
@@ -75,40 +75,40 @@ error:function (){}
 
 <div style="margin-left:-250px; margin-top:30px;">
 <div class="form_grupo" id="grupo_nombre">
-<label for="nombre" class="form_label"  style="font-size: 15px; font-weight: bolder; margin-left:-250px;">Nombre:</label>
+<label for="nombre" class="form_label"  style=" font-size: 18px; font-weight: bolder; margin-left:-250px;">Nombre:</label>
    <div class="form_grupo-input">
-<input type="text" id="nombre" class="form-control" style="width:250px; margin-left:350px;" name="nombre" placeholder="Nombre" autocomplete="true">
+<input type="text" id="nombre" class="form-control" style="  font-size: 18px; width:250px; margin-left:350px;" name="nombre" placeholder="Nombre" autocomplete="off">
   </div>
 </div>
 
 <div class="form_grupo" id="grupo_apat" style="margin-top:20px;">
-<label for="apat" class="form_label"  style="font-size: 15px; font-weight: bolder;  margin-left:-200px;">Apellido Paterno:</label>
+<label for="apat" class="form_label"  style=" font-size: 18px; font-weight: bolder;  margin-left:-200px;">Apellido Paterno:</label>
 <div class="form_grupo-input">
-<input type="text" id="apat" class="form-control" style="width:250px; margin-left:350px;" name="apat" placeholder="Apellido Paterno" autocomplete="true">
+<input type="text" id="apat" class="form-control" style="  font-size: 18px; width:250px; margin-left:350px;" name="apat" placeholder="Apellido Paterno" autocomplete="off">
      </div>
 </div>
 </div>
 
 <div style="margin-left:250px; margin-top:-160px;">
 <div class="form_grupo" id="grupo_nombre2">
-<label for="nombre2" class="form_label"  style="font-size: 15px; font-weight: bolder;">Segundo Nombre:</label>
+<label for="nombre2" class="form_label"  style=" font-size: 18px; font-weight: bolder;">Segundo Nombre:</label>
 <div class="form_grupo-input">
-<input type="text" id="nombre2" class="form-control" style="width:250px; margin-left:200px;" name="nombre2" placeholder="Segundo Nombre" autocomplete="true">
+<input type="text" id="nombre2" class="form-control" style="  font-size: 18px; width:250px; margin-left:200px;" name="nombre2" placeholder="Segundo Nombre" autocomplete="off">
   </div>
 </div>
 
 <div class="form_grupo" id="grupo_Amat" style="margin-top:20px;">
-<label for="amat" class="form_label"  style="font-size: 15px; font-weight: bolder;">Apellido Materno:</label>
+<label for="amat" class="form_label"  style=" font-size: 18px; font-weight: bolder;">Apellido Materno:</label>
 <div class="form_grupo-input">
-<input type="text" id="amat" class="form-control" style="width:250px; margin-left:200px;" name="amat" placeholder="Apellido Materno" autocomplete="true">
+<input type="text" id="amat" class="form-control" style="  font-size: 18px; width:250px; margin-left:200px;" name="amat" placeholder="Apellido Materno" autocomplete="off">
   </div>
 </div>
 </div>
 <br>
 
 <div class="form_grupo" id="grupo_email">
-<label for="email" class="form_label" style="font-size: 15px; font-weight: bolder; margin-left:-250px;">Email:</label>
-<input type="text" id="email" class="form-control" style="width:320px; margin-left:300px; margin-top:-40px;" name="email" placeholder="example@outlook.com" autocomplete="true" onkeydown="validation()" onkeyup="comprobarEmail()">
+<label for="email" class="form_label" style="font-size: 18px; font-weight: bolder; margin-left:-300px;">Email:</label>
+<input type="text" id="email" class="form-control" style=" font-size: 18px; width:320px; margin-left:300px; margin-top:-40px;" name="email" placeholder="example@outlook.com" autocomplete="off" onkeydown="validation()" onkeyup="comprobarEmail()">
 <span id="text"></span>
 <br>
 <span id="estadoemail"></span>
@@ -116,53 +116,55 @@ error:function (){}
 </div>
 <br>
     <div class="formulario__grupo" id="grupo__usuario">
-      <label for="usuario" class="formulario__label" style="font-size: 15px; font-weight: bolder; margin-left:-300px;">Usuario:</label>
-      <input type="text" id="usuario" class="form-control" style="width:200px; margin-left:300px; margin-top:-40px;" name="usuario" placeholder="user123" autocomplete="true" style="width:150px;"  onkeyup="comprobarUsuario()">
-      <span id="estadousuario"></span> 
+      <label for="usuario" class="formulario__label" style="font-size: 18px; font-weight: bolder; margin-left:-400px;">Usuario:</label>
+      <input type="text" id="usuario" class="form-control" style=" font-size: 18px; width:200px; margin-left:250px; margin-top:-40px;" name="usuario" placeholder="user123" autocomplete="off" style="width:150px;"  onkeyup="comprobarUsuario()">
+      <span style="margin-left:-100px;" id="estadousuario"></span> 
       <br><br>
 
       <div class="formulario__grupo" id="grupo__contra">
-      <label for="usuario" class="formulario__label" style="font-size: 15px; font-weight: bolder; margin-left:-305px; margin-top:-20px;">Contraseña:</label>
-<input type="password" id="PassEntry" class="form-control" style="width:200px; margin-left:300px; margin-top:-45px;" name="contra" placeholder="********">
+      <label for="usuario" class="formulario__label" style="font-size: 18px; font-weight: bolder; margin-left:-405px; margin-top:-20px;">Contraseña:</label>
+<input type="password" id="PassEntry" class="form-control" style=" font-size: 18px; width:200px; margin-left:250px; margin-top:-45px;" name="contra" placeholder="********">
 <br>
         <span id="StrengthDisp" class="badge displayBadge" style="width:180px; margin-left:250px;"></span>
 <br>
 </div>
 <div style="margin-left:500px; margin-top:-140px;">
-<label for="combo" class="combo" style="font-size: 15px; font-weight: bolder;">Rol:</label>
-<select name="roles" class="form-select" id="roles" style="width:150px; font-size: 15px;" >
-<option value="Administrador" selected>Administrador</option>
-<option value="Vendedor" >Vendedor</option>
-<option value="Comprador">Comprador</option>
+<label for="combo" class="combo" style="font-size: 18px; font-weight: bolder;">Rol:</label>
+<select name="roles" class="form-select" id="roles" style="width:200px; font-size: 18px;" >
+<option id="rol0" value="rol0" selected>Elija una opcion...</option>
+<option id="Administrador" value="Administrador">Administrador</option>
+<option id="Vendedor" value="Vendedor" >Vendedor</option>
+<option id="Comprador" value="Comprador">Comprador</option>
 </select>
 
 <br>
-<label for="combo" class="combo" style="font-size: 15px; font-weight: bolder; margin-top:30px;">Cuenta:</label>
-<select name="cuenta" class="cuenta" id="cuenta" style=" font-size:15px; width:100px;" >
-<option value="Publico" selected>Publico</option>
-<option value="Privado" >Privado</option>
+<label for="combo" class="combo" style="font-size: 18px; font-weight: bolder; margin-top:30px; margin-left:-30px;">Cuenta:</label>
+<select name="cuenta" class="cuenta" id="cuenta" style=" font-size:18px; width:200px;" >
+<option id="cuenta0" value="cuenta0" selected>Elija una opcion...</option>
+<option id="Publico" value="Publico" >Publico</option>
+<option id="Privado" value="Privado" >Privado</option>
 </select>
 </div>
 </div>
 
 <br></br>
 
-<label for="fn" class="fn"  style="margin-top:-30px; font-size: 15px; font-weight: bolder; margin-left:-10px;">Fecha de Nacimiento:</label>
+<label for="fn" class="fn"  style="margin-top:-30px; font-size: 18px; font-weight: bolder; margin-left:-10px;">Fecha de Nacimiento:</label>
 
 <input type="date" id="fn" name="fn" value="2000-01-01" min="1960-01-01" max="2000-01-01">
 
-<label for="fn" class="fi" style="margin-top:-30px; font-size: 15px; font-weight: bolder; margin-left:30px;">Fecha de Ingreso:</label>
+<label for="fn" class="fi" style="margin-top:-30px; font-size: 18px; font-weight: bolder; margin-left:30px;">Fecha de Ingreso:</label>
 
 <input type="date" id="fi" name="fi" value="2022-10-21" min="1990-01-01" max="2024-01-01">
 <br></br>
 <div style="margin-left=-300px; text-align:center;">
-<label for="genero" class="genero" style="font-size: 15px; font-weight: bolder;">Genero:</label>
+<label for="genero" class="genero" style="font-size: 18px; font-weight: bolder;">Genero:</label>
   
-<input type="radio" id="HombreX" name="genero" value="Masculino" style="margin-left:10px; font-size: 15px;">
-<label for="HombreX">Masculino</label>
+<input type="radio" id="HombreX" name="genero" value="Masculino" style="margin-left:10px; font-size: 20px;">
+<label for="HombreX" style="font-size: 18px;">Masculino</label>
 
-<input type="radio" id="MujerX" name="genero" value="Femenino" style="margin-left:20px; font-size: 15px;">
-<label for="MujerX">Femenino</label>
+<input type="radio" id="MujerX" name="genero" value="Femenino" style="margin-left:20px; font-size: 20px;">
+<label for="MujerX" style="font-size: 18px;">Femenino</label>
    
 </div>
 
@@ -176,90 +178,127 @@ error:function (){}
 </div>
                     <br>
 
-<input type="submit" id="Registro" name="Registro" class="btn btn-primary btn-block" style=" margin-left:250px; width:300px;" value="Registrarse"></input>
+<input type="button" id="Registro" name="Registro" class="btn btn-primary btn-block" style=" margin-left:250px; width:300px;"  value="Registrarse"></input>
 <a type="button" href="Login.php" class="btn btn-danger btn-block" style=" margin-left:600px; margin-top:-40px; width:100px;">Cancelar</a>
 
 </form>
 
 
 </main>
-
-<?php
-// 
-
-if(isset($_POST) && isset($_FILES) )
-{
-  if(isset($_POST['Registro'])){
-
-    $nombre = $_POST['nombre'];
-    $nombre2 = $_POST['nombre2'];
-    $apat = $_POST['apat'];
-    $amat = $_POST['amat'];
-    $email = $_POST['email'];
-    $usuario = $_POST['usuario'];
-    $contra = $_POST['contra'];
-    $select = $_POST['roles'];
-    $fn = $_POST['fn'];
-    $genX = $_POST['genero'];
-    $select2 = $_POST['cuenta'];
-    $fi = $_POST['fi'];
-
+<script>
+Registro.addEventListener("click", () =>{
     
+    var nom = document.getElementById("nombre").value; 
+    var nom2 = document.getElementById("nombre2").value; 
+    var apat = document.getElementById("apat").value; 
+    var amat = document.getElementById("amat").value; 
+    var correo = document.getElementById("email").value; 
+    var user = document.getElementById("usuario").value; 
+    var pwd = document.getElementById("PassEntry").value; 
+    var rol = document.getElementById("rol0").value; 
+    var cuenta = document.getElementById("cuenta0").value; 
 
-        $tipoArchivo=$_FILES['foto']['type'];
-        $nombreArchivo=$_FILES['foto']['name'];
-        $tamArchivo=$_FILES['foto']['size'];
-        $imagenSubida=fopen($_FILES['foto']['tmp_name'],'r');
-        $binarioImagen=fread($imagenSubida,$tamArchivo);
+    var cont = 9;
+    var cont2 = 3;
 
-        require("./BACKEND/Connection.php");
+    if((correo == "") || (nom == "") || (nom2 == "") || (apat == "") || (amat == "") || (user == "") || (pwd == "")){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Campos vacios!',
+            text: 'Porfavor llena todos los campos',
+            timer: 5000 // es ms (mili-segundos)
+          })
+          return false;
 
 
-
-
-        $sql ="INSERT IGNORE INTO Usuarios(nombre,nombre2,ApPat,ApMat,email,usuario,contraseña,Rol,FN,genero,Cuenta,FechaIngreso,foto,ruta_foto,tipo_foto) 
-                        VALUES(:nom, :nom2, :apat, :amat, :e, :usu, :contra, :rol, :fn, :gen, :cuen, :fi, :img, :txt, :tipo)";
-
-$query=  $pdo->prepare($sql);                      
-$query->bindParam(":nom",$nombre,PDO::PARAM_STR,30);
-$query->bindParam(":nom2",$nombre2,PDO::PARAM_STR,30);
-$query->bindParam(":apat",$apat,PDO::PARAM_STR,30);
-$query->bindParam(":amat",$amat,PDO::PARAM_STR,30);
-$query->bindParam(":e",$email,PDO::PARAM_STR,30);
-$query->bindParam(":usu",$usuario,PDO::PARAM_STR,15);
-$query->bindParam(":contra",$contra,PDO::PARAM_STR,15);
-$query->bindParam(":rol",$select);
-$query->bindParam(":fn",$fn);
-$query->bindParam(":gen",$genX);
-$query->bindParam(":cuen",$select2);
-$query->bindParam(":fi",$fi);
-$query->bindParam(":img",$binarioImagen,PDO::PARAM_LOB);
-$query->bindParam(":txt",$nombreArchivo,PDO::PARAM_STR,100);
-$query->bindParam(":tipo",$tipoArchivo,PDO::PARAM_STR,100);
-$query->execute();
-$resultado = $query->execute();
-if($resultado)
-    {
-        echo "<script> alert('USUARIO REGISTRADO')</script>";
-    
     }
-    else{
+
+    if(pwd.length < cont){
+        Swal.fire({
+            icon: 'error',
+            title: 'Contraseña Invalida',
+            text: 'Ingresa una contraseña de minimo 8 caracteres',
+            timer: 5000 // es ms (mili-segundos)
     
-      if(empty($nombre) || empty($nombre2) || empty($apat) || empty($amat) || empty($email) || empty($usuario) || empty($contra))
-    {
-      echo "<script>alert('Llene los campos porfavor')</script>";
+          })
+          return false;
+
+ 
+    }
+
+    if(user.length < cont2){
+        Swal.fire({
+            icon: 'error',
+            title: 'Usuario Invalido',
+            text: 'Ingresa un usuario de minimo 3 caracteres',
+            timer: 5000 // es ms (mili-segundos)
+    
+          })
+          return false;
+
+ 
+    }
+    
+    Swal.fire({
+    title: '¿Esta seguro que quiere Agregar?',
+    text: "No podra revertirlo",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Agregar',
+    cancelButtonText:  'Cancelar',
   
-    }
-    else{
-        echo "<script> alert('ERROR')</script>";
-    }
-  }
+    })
 
+
+.then((result) =>{
+
+    if(result.isConfirmed){
+        fetch("registrar.php", {
+             method: "POST",
+             body: new FormData(formulario)
+        })
+
+        .then(result => result.text()).then(result => {
+
+        
+
+            if(result == "ok"){
     
-  }
+            Swal.fire(
+                'Usuario Agregado!',
+                'Bien hecho .',
+                'success'
+            )
+            location.href="Login.php";
+            return true;
+        }
 
-}
-?>
+        else{
+            Swal.fire({
+                icon: 'error',
+                title: 'ERROR',
+                text: 'No se pudo registrar correctamente,intente de nuevo...'
+              })
+              return false;
+        }
+ 
+        
+    })
+
+  }
+})
+})
+
+
+
+</script>
+
+
+
+
 <!-- <script src="registro.js"></script> -->
 <script src="reg.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

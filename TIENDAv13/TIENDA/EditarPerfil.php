@@ -122,25 +122,21 @@
 
 
 
-<div class="col-lg-12">
-    <table class="table table-hover table-responsive" style="margin-left:-20px; margin-top:100px;" >
-      <thead class="thead-dark" style="font-size:13px;">
+<div class="col-lg-32">
+    <table class="table table-hover table-responsive" style="margin-left:-20px; margin-top:100px; width:200%;" >
+      <thead class="thead-dark" style="font-size:13px; text-align:center;">
         <tr>
-          <th>Usuario</th>
-          <th>Nombre</th>
-          <th>Segundo Nombre</th>
-          <th>Apellido Paterno</th>
-          <th>Apellido Materno</th>
-          <th>Correo Electronico</th>
-          <th>Fecha Nacimiento</th>
-          <th>Cuenta</th>
-          <th>Rol de usuario</th>
-          <th style="width:500px;">Fecha Ingreso</th>
-          <th>IMAGEN</th>
-          <th>Accion</th>
+          <th style= "width:450px;">Usuario</th>
+          <th style= "width:400px;">Correo Electronico</th>
+          <th style= "width:100px;">FN</th>
+          <th style= "width:100px;">Cuenta</th>
+          <th style= "width:100px;">Rol</th>
+          <th style= "width:100px;">Fecha</th>
+          <th style= "width:100px;">IMAGEN</th>
+          <th style= "width:130px;">Accion</th>
         </tr>
       </thead>
-      <tbody id="resultado" style="font-size:13px;">
+      <tbody id="resultado" style="font-size:13px; display: block; height: 500px; overflow-y: auto;  overflow-x: hidden;">
 
       </tbody>
     </table>

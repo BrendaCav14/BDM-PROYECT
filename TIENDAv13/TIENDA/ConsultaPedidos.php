@@ -63,60 +63,24 @@
 
 </div> 
 
-<div class="consulta1">
- <label for="producto"  >CONSULTA</label>
-       <br></br> 
-</div>
-<div>
-
-<table>
-  
-  <tr>
+<div class="col-lg-6">
+    <table class="table table-hover table-responsive" style="margin-left:500px; margin-top:-200px;" >
+      <thead class="thead-dark" style="font-size:13px;">
+        <tr>
+          
     <th>Fecha</th>
     <th>Hora</th>
     <th>Categoria</th>
     <th>Producto</th>
     <th>Calificacion</th>
     <th>Precio</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-   
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-   
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-   
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-    
-  </tr>
-  
-</table>
+
+        </tr>
+      </thead>
+      <tbody id="resultado" style="font-size:13px;">
+
+      </tbody>
+    </table>
 
 </div>
 

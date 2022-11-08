@@ -35,39 +35,41 @@ if(isset($_POST) && isset($_FILES) )
         else{
         
    
-    $sql ="INSERT IGNORE INTO Usuarios(nombre,nombre2,ApPat,ApMat,email,usuario,contraseña,Rol,FN,genero,Cuenta,FechaIngreso,foto,ruta_foto,tipo_foto) 
-                        VALUES(:nom, :nom2, :apat, :amat, :e, :usu, :contra, :rol, :fn, :gen, :cuen, :fi, :img, :txt, :tipo)";
+    // $sql ="INSERT IGNORE INTO Usuarios(nombre,nombre2,ApPat,ApMat,email,usuario,contraseña,Rol,FN,genero,Cuenta,FechaIngreso,foto,ruta_foto,tipo_foto) 
+                        // VALUES(:nom, :nom2, :apat, :amat, :e, :usu, :contra, :rol, :fn, :gen, :cuen, :fi, :img, :txt, :tipo)";
 
-    $query=  $pdo->prepare($sql);                      
+        
+                        $sql ="CALL SP_Usuario('I',:usu, :e,  :contra,:nom, :nom2, :apat, :amat,  :img, :txt, :tipo, :fn, :gen, :fi, :cuen, :rol);";
+
+    $query=  $pdo->prepare($sql); 
+    
+    $query->bindParam(":usu",$usuario,PDO::PARAM_STR,15);
+    $query->bindParam(":e",$email,PDO::PARAM_STR,30);
+    $query->bindParam(":contra",$contra,PDO::PARAM_STR,15);
     $query->bindParam(":nom",$nombre,PDO::PARAM_STR,30);
     $query->bindParam(":nom2",$nombre2,PDO::PARAM_STR,30);
     $query->bindParam(":apat",$apat,PDO::PARAM_STR,30);
     $query->bindParam(":amat",$amat,PDO::PARAM_STR,30);
-    $query->bindParam(":e",$email,PDO::PARAM_STR,30);
-    $query->bindParam(":usu",$usuario,PDO::PARAM_STR,15);
-    $query->bindParam(":contra",$contra,PDO::PARAM_STR,15);
-    $query->bindParam(":rol",$select);
-    $query->bindParam(":fn",$fn);
-    $query->bindParam(":gen",$genX);
-    $query->bindParam(":cuen",$select2);
-    $query->bindParam(":fi",$fi);
     $query->bindParam(":img",$binarioImagen,PDO::PARAM_LOB);
     $query->bindParam(":txt",$nombreArchivo,PDO::PARAM_STR,100);
     $query->bindParam(":tipo",$tipoArchivo,PDO::PARAM_STR,100);
+
+    
+    $query->bindParam(":fn",$fn);
+    $query->bindParam(":gen",$genX); 
+    $query->bindParam(":fi",$fi);
+    $query->bindParam(":cuen",$select2);
+    $query->bindParam(":rol",$select);
+
     $query->execute();
     $resultado = $query->execute();
 
     if($resultado)
-    {
-        echo "ok";
-        exit();
+    {   $pdo = null;
+         echo "ok";
+        
     }
-    else{
-      
-        echo "error";
-        exit();
-     
-        }
+
     }
     // print_r($_POST);
     // print_r($_FILES);

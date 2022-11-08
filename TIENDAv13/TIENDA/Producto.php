@@ -149,11 +149,11 @@
           <br></br>
           <h1 style="margin-left:100px; color:#D07118; font-weight: bolder; font-size:30px;">Articulos Similares</h1>
           <br></br>
-
+          <div style="display: block; width:1000px; height:400px; overflow-x: auto; overflow-y: hidden;">
   <!-- CARDS -->         
   <div class="container">
   <div class="row">
-    <div class="col-sm-6 col-md-3" style="border-radius: 5% ; height:260px; background-color:#E7F3FF;">
+    <div class="col-sm-6 col-md-3" style="border-radius: 5% ; height:300px; background-color:#E7F3FF;">
       <div class="custom-column">
         
         <div class="custom-column-content" style="text-align:center;">
@@ -168,7 +168,7 @@
       </div>
     </div>
 
-    <div class="col-sm-6 col-md-3" style="border-radius: 5% ; height:260px; background-color:#E7F3FF;">
+    <div class="col-sm-6 col-md-3" style="border-radius: 5% ; height:300px; background-color:#E7F3FF;">
       <div class="custom-column">        
       
       <div class="custom-column-content" style="text-align:center;">
@@ -183,7 +183,7 @@
       </div>
       </div>
 
-      <div class="col-sm-6 col-md-3" style="border-radius: 5% ; height:260px; background-color:#E7F3FF;">
+      <div class="col-sm-6 col-md-3" style="border-radius: 5% ; height:300px; background-color:#E7F3FF;">
       <div class="custom-column">
         
         <div class="custom-column-content" style="text-align:center;">
@@ -199,7 +199,7 @@
       </div>
     </div>
 
-    <div class="col-sm-6 col-md-3" style="border-radius: 5% ; height:260px; background-color:#E7F3FF;">
+    <div class="col-sm-6 col-md-3" style="border-radius: 5% ; height:300px; background-color:#E7F3FF;">
       <div class="custom-column">        
       
       <div class="custom-column-content" style="text-align:center;">
@@ -213,23 +213,27 @@
         <div class="custom-column-footer" style="text-align:center;"><button class="btn btn-primary btn-lg">Agregar al Carrito</button></div>
       </div>
       </div>
-
+</div>
   </div>
 </div>
 
 <br></br>
+
 <br></br>
 <br></br>
+
+
 
 <h1 style="margin-left:400px; color:#D07118; font-weight: bolder; font-size:30px;">Comentarios del Producto</h1>
 
+<div style="display: block; height: 500px; overflow-y: auto; overflow-x: hidden;">
 <!-- CARDS -->         
 <div class="container" style="margin-left:200px;">
   <div class="row">
     <div class="col-sm-24 col-md-8" style="border-radius: 5% ; height:250px; background-color:#E7F3FF;">
-      <div class="custom-column">
+      <div class="custom-column" >
         
-        <div class="custom-column-content" style="text-align:center;">
+        <div class="custom-column-content" style="text-align:center;  ">
         <br>
         <div>
         <img src="IMG/Imagen1.jpg" class="card-img-top" alt="Imagen1" style="border-radius:80%; width:50px; height:50px;">
@@ -353,7 +357,7 @@
 
         </div>
     </div>
-    
+</div>
 
 </div>
 

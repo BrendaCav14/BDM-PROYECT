@@ -37,15 +37,14 @@
        <div style="margin-left:-40px; margin-top:-50px;">
        <label for="cat" class="cat"  style=" font-size:20px; margin-left:-80px; margin-top:20px;">Nombre:</label>
        <input type="text" id="nombrecat" name="nombrecat" class="form-control" style="width:500px; font-size:20px; margin-top:-30px; margin-left:10px;" placeholder="Escribe un nombre de Categoria">
-       </div>
-
-       
+       </div> 
+       <br>
 
       <div style="margin-top:-80px;">
        <label for="descripcion" class="desc" style=" font-size:20px; margin-left:-150px; margin-top:80px;">Descripcion:</label>
        <input type="text" id="descripcion" name="descripcion" class="form-control" style="font-size:20px; width:900px; margin-top:-30px; margin-left:-25px;" placeholder="Descripcion corta...">
       </div>
-      
+      <br>
       <div style="margin-left:50px; margin-top:-50px;">
        <label for="descripcion" class="desc" style=" font-size:20px; margin-left:-150px; margin-top:50px; ">Tu usuario:</label>
        <input type="text" id="vendedor" name="vendedor" class="form-control" style="font-size:20px; width:200px; margin-left:-40px; margin-top:-30px;" placeholder="Usuario">
@@ -54,7 +53,7 @@
       
 
 </div> 
-<div style="margin-left:850px; margin-top:-40px;">
+<div style="margin-left:850px; margin-top:40px;">
 <input type="submit" name="cat" id="cat" class="btn btn-success" style="width:200px; font-size:15px; margin-left:-150px;" value="Agregar Categoria">
 <a href="PaginaInicio.php" type="button" class="btn btn-danger" style="width:120px; font-size:15px; margin-left:30px;">Cancelar</a>
 </div>
@@ -63,16 +62,16 @@
 
 <div class="col-lg-6">
     <table class="table table-hover table-responsive" style="margin-left:300px; margin-top:20px;" >
-      <thead class="thead-dark" style="font-size:13px;">
+      <thead class="thead-dark" style="font-size:13px; text-align:center;">
         <tr>
           
-          <th>Nombre</th>
-          <th>Descripcion</th>
-          <th>Usuario</th>
-          <th>Acciones</th>
+          <th style="width:100px;">Nombre</th>
+          <th style="width:200px;">Descripcion</th>
+          <th style="width:100px;">Usuario</th>
+          <th style="width:100px;">Acciones</th>
         </tr>
       </thead>
-      <tbody id="resultado" style="font-size:13px;">
+      <tbody id="resultado" style="font-size:13px; display: block; height: 300px; overflow-y: auto;  overflow-x: hidden;">
 
       </tbody>
     </table>
@@ -87,8 +86,7 @@
 <?php
 // 
 
-if(isset($_POST) && isset($_FILES) )
-{
+
   if(isset($_POST['cat'])){
 
     $nombre = $_POST['nombrecat'];
@@ -97,8 +95,8 @@ if(isset($_POST) && isset($_FILES) )
     
         require("./BACKEND/Connection.php");
 
-
-        $sql ="INSERT IGNORE INTO Categoria(nombre_Cat,descripcion,FK_vendedor) VALUES(:nom, :d, :vend)";
+        $sql = "CALL SP_Categoria('I',:nom, :d, :vend);";
+        // $sql ="INSERT IGNORE INTO Categoria(nombre_Cat,descripcion,FK_vendedor) VALUES(:nom, :d, :vend)";
 
 $query=  $pdo->prepare($sql);                      
 $query->bindParam(":nom",$nombre,PDO::PARAM_STR,50);
@@ -106,7 +104,7 @@ $query->bindParam(":d",$desc,PDO::PARAM_STR,50);
 $query->bindParam(":vend",$vendedor,PDO::PARAM_STR,15);
 
 $query->execute();
-$resultado = $query->execute();
+$resultado = $query->execute(); 
 if($resultado)
     {
         echo "<script> alert('CATEGORIA AGREGADA') </script>";
@@ -120,7 +118,6 @@ if($resultado)
     
   }
 
-}
 ?>
 
 

@@ -94,27 +94,87 @@ if(email == "")
 
 
 
-// Reg.addEventListener("click", () =>{
+// Registro.addEventListener("click", () =>{
     
-//     fetch("Reg.php",{
-//         method: "POST",
-//         body: new FormData(formulario)
-//     }).then(response => response.text()).then(response=>{
+//     // var nom = document.getElementByName("nombre")[0].value; 
+//     // var nom2 = document.getElementByName("nombre2")[0].value; 
+//     // var apat = document.getElementByName("apat")[0].value; 
+//     // var amat = document.getElementByName("amat")[0].value; 
+//     // var correo = document.getElementByName("email")[0].value; 
+//     // var user = document.getElementName("usuario")[0].value; 
+//     // var pwd = document.getElementByName("contra")[0].value; 
 
-//            console.log(response);
+//     // if((correo == "") || (nom == "") || (nom2 == "") || (apat == "") || (amat == "") || (user == "") || (pwd == "")){
 
-//         //    try {
-//         //     var status
-//         //     if(response == "ok" ){
-             
-//         //         alert("SE A REGISTRADO");
-//         //     }
-          
-//         //   } catch (error) {
-//         //     // Re-throw the error with a status code.
-//         //     error.statusCode = 400
-//         //     throw new Error('Page not found')
-//         //   }
+//     //     Swal.fire({
+//     //         icon: 'error',
+//     //         title: 'Campos vacios!',
+//     //         text: 'Porfavor llena todos los campos'
+//     //       })
 
-//    });
+
+//     // }
+
+//     // if(pwd.length > 9){
+//     //     Swal.fire({
+//     //         icon: 'error',
+//     //         title: 'Contraseña Invalida',
+//     //         text: 'Ingresa una contraseña de minimo 8 caracteres'
+//     //       })
+
+ 
+//     // }
+    
+//     Swal.fire({
+//     title: '¿Esta seguro que quiere Agregar?',
+//     text: "No podra revertirlo",
+//     icon: 'warning',
+//     showCancelButton: true,
+//     confirmButtonColor: '#3085d6',
+//     cancelButtonColor: '#d33',
+//     confirmButtonText: 'Agregar',
+//     cancelButtonText:  'Cancelar'
+
+//     })
+
+
+// .then((result) =>{
+
+//     if(result.isConfirmed){
+//         fetch("Reg.php", {
+//              method: "POST"
+//         })
+
+//         .then(response => response.text()).then(response => {
+
+
+     
+
+//             if(response == "ok"){
+                
+//             console.log(response);
+       
+
+//             Swal.fire(
+//                 'Usuario Agregado!',
+//                 'Bien hecho .',
+//                 'success'
+//             )
+//             return true;
+//         }
+
+//         else{
+//             Swal.fire({
+//                 icon: 'error',
+//                 title: 'ERROR',
+//                 text: 'No se pudo registrar correctamente,intente de nuevo...'
+//               })
+//               return false;
+//         }
+ 
+        
+//     })
+        
+//     }
+// })
 // })

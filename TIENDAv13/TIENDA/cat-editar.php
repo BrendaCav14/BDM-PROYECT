@@ -3,8 +3,12 @@
 $data = file_get_contents("php://input");
 require("./BACKEND/Connection.php");
 
-$query=$pdo->prepare("SELECT nombre_Cat,descripcion, FK_vendedor FROM Categoria WHERE nombre_Cat = :id");
-$query->bindParam(":usu",$data);
+// $consulta="CALL SP_Categoria('A',null,null,'$data');";
+
+// $resultado = mysqli_query($con,$consulta);
+
+$query=$pdo->prepare("CALL SP_Categoria('A',null,null,:id);");
+$query->bindParam(":id",$data);
 $query->execute();
 $resultado = $query->fetchAll(PDO::FETCH_ASSOC);
 if($resultado){

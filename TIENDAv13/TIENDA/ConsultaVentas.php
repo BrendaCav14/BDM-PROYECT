@@ -27,7 +27,7 @@
 
           <div style="background-color:white; width:1100px; height: 800px; margin-left:5px;">
         <br></br>
-        <h1 style=" color:#D07118; font-weight: bolder; font-size:30px; margin-left:430px;">Ventas realizadas del Vendedor</h1>
+        <h1 style=" color:#D07118; font-weight: bolder; font-size:30px; margin-left:350px;">Ventas realizadas del Vendedor</h1>
  
        <br></br>
        <br></br>
@@ -62,14 +62,16 @@
 </div> 
 
 <div class="consulta1">
- <label for="producto"  >CONSULTA DETALLADA</label>
-       <br></br> 
+ <label >CONSULTA DETALLADA</label>
+       <br>
 </div>
-<div>
 
-<table>
-  
-  <tr>
+
+<div class="col-lg-6">
+    <table class="table table-hover table-responsive" style="margin-left:500px; margin-top:20px;" >
+      <thead class="thead-dark" style="font-size:13px;">
+        <tr>
+          
     <th>Fecha</th>
     <th>Hora</th>
     <th>Categoria</th>
@@ -77,98 +79,40 @@
     <th>Calificacion</th>
     <th>Precio</th>
     <th>Existencia</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-    <td>7</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-    <td>7</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-    <td>7</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-    <td>7</td>
-  </tr>
-  
-</table>
+        </tr>
+      </thead>
+      <tbody id="resultado" style="font-size:13px;">
 
-
-
+      </tbody>
+    </table>
 
 </div>
 
 <div class="consulta2">
  <label for="producto"  >CONSULTA AGRUPADA</label>
-       <br></br> 
+       <br>
 </div>
-<div>
 
-<table class="table2">
-  
-  <tr>
+
+<div class="col-lg-6">
+    <table class="table table-hover table-responsive" style="margin-left:500px; margin-top:20px;" >
+      <thead class="thead-dark" style="font-size:13px;">
+        <tr>
+          
     <th>Mes</th>
     <th>Año</th>
     <th>Categoria</th>
     <th>Ventas</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-  </tr>
-  
-</table>
+        </tr>
+      </thead>
+      <tbody id="resultado" style="font-size:13px;">
 
-
-
+      </tbody>
+    </table>
 
 </div>
 
-<div style="margin-left:850px; margin-top:40px;">
+<div style="margin-left:850px; margin-top:200px;">
 <a href="PaginaInicio.php" type="button" class="btn btn-danger" style="width:100px; font-size:15px; margin-left:100px;">Regresar</a>
 </div>
         

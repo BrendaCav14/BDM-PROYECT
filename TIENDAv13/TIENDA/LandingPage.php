@@ -43,7 +43,7 @@
   <a  href="Login.php" type="button" class="btn btn-link" style="width:150px; text-decoration: underline; color:white; text-align:center; margin-top:-900px; margin-left:1100px; background-color:#7B1842" >Iniciar Sesion</a>
 </div>
 <div>
-  <a href="RegUsuario.php" type="button" class="btn btn-primary btn-lg" style=" color:white; text-align:center; margin-left:450px; margin-top:-30px; background-color:orange" >Registrate ya</a>
+  <a href="Reg-signup.php" type="button" class="btn btn-primary btn-lg" style=" color:white; text-align:center; margin-left:450px; margin-top:-30px; background-color:orange" >Registrate ya</a>
   </div>
 </div>
 

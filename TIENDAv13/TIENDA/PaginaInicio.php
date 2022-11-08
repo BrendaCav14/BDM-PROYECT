@@ -67,7 +67,7 @@
 
 <h1 style="font-size:40px;  color:#8d0909; margin-top:-50px; margin-left:180px; font-weight: bold; font-family: Trirong, sans-serif;">LO MAS VENDIDO EN EL 2022 !</h1>
 
- 
+<div style="display: block; height: 500px; overflow-y: auto; overflow-x: hidden;">
 <!-- CARDS -->         
  <div class="container">
   <div class="row">
@@ -195,19 +195,8 @@
       </div>
       </div>
 
-      <div style="margin-left:300px; font-size:15px;">
-      <ul class="pagination">
-  <li><a href="#">&laquo;</a></li>
-  <li><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#">&raquo;</a></li>
-       </ul>
-
-     </div>
   </div>
+</div>
 </div>
 
 

@@ -53,16 +53,15 @@ function Eliminar(id){
 }
 
 
-function Editar(id){
+function Editar(id,desc,ven){
     fetch("cat-editar.php", {
         method: "POST",
         body: id
    }).then(response => response.json()).then(response => {
     console.log(response);
-    // nombrecat.value = response.nombrecat;
-    // descripcion.value = response.descripcion;
-    // vendedor.value = response.vendedor;
-    
-       
+    document.getElementById("nombrecat").value = id;
+    document.getElementById("descripcion").value = desc;
+    document.getElementById("vendedor").value = ven;
+   
     })
 }

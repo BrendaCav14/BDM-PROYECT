@@ -17,12 +17,12 @@ foreach($resultado as $data){
            <td>".$data['ApPat']."</td>
            <td>".$data['ApMat']."</td>
            <td>".$data['email']."</td>
-           <td>".$data['FN']."</td>
+           <td  style='width:150px;'>".$data['FN']."</td>
            <td>".$data['Cuenta']."</td>
            <td>".$data['Rol']."</td>
-           <td style='width:500px;'>".$data['FechaIngreso']."</td>
+           <td style='width:150px;'>".$data['FechaIngreso']."</td>
            <td>
-           <img src='data:image/jpeg;base64,".base64_encode($data['foto'])." ' style='width:80px; height:80px;' />
+           <img src='data:image/jpeg;base64,".base64_encode($data['foto'])." ' style='width:30px; height:30px;' />
 
            </td>
         <td>
