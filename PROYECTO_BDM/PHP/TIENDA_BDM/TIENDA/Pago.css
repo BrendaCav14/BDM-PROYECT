@@ -1,0 +1,254 @@
+
+
+
+  .Pago{
+    background-color:aliceblue;
+    width:1110px;
+    height:2000px;
+    font-size:20px;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .metodo_text{
+    margin-left:50px;
+  
+  }
+
+  .ingresar_text{
+    margin-left:50px;
+  }
+
+  .price{
+    margin-left:400px;
+  }
+
+
+  #coment{
+    font-size:15px;
+    width: 600px;
+    
+  }
+
+
+  .col-50{
+    font-size:15px;
+  }
+
+  #tarjetas{
+    font-size:30px;
+  }
+
+  #aqui{
+    background-color:rgb(212, 223, 233);
+    width:900px;
+    height:350px;
+    border-radius: 3%;
+    margin-left:100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+
+  #aqui2{
+    background-color:rgb(212, 223, 233);
+    width:900px;
+    height:280px;
+    border-radius: 3%;
+    margin-left:85px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  
+  .fact{
+    font-size:20px;
+    margin-left: 400px;
+  }
+
+ #name{
+    margin-left:160px;
+  }
+
+  #name2{
+    margin-left:50px;
+  }
+
+  #name3{
+    margin-left:100px;
+  }
+
+  #name4{
+    margin-left:50px;
+  }
+
+  #email-text{
+    margin-left:180px;
+  }
+
+  #email{
+    width:300px;
+  }
+
+  #adress{
+    margin-left:180px;
+  }
+
+  #ciudad{
+    margin-left:50px;
+  }
+
+  #estado{
+    margin-left:204px;
+  }
+
+  #CP{
+    margin-left:30px;
+  }
+
+  #numcc{
+    margin-left:20px;
+  }
+
+  #expmes{
+    margin-left:-50px;
+  }
+
+  #expaño{
+    margin-left:30px;
+  }
+
+  #expyear{
+    width:70px;
+  }
+
+  #cvv{
+    width:50px;
+  }
+
+  #cvv-text{
+    margin-left:30px;
+  }
+  
+
+  #comprar{
+    width:500px;
+    text-align: center;
+    font-size: large;
+    margin-top: 10px;
+    margin-left:85px;
+  }
+
+  #cancelar{
+    width:200px;
+    text-align: center;
+    font-size: large;
+    margin-left:780px;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.rate {
+    float: left;
+    height: 20px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:20px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+
+.rate2 {
+  float: left;
+  height: 20px;
+  padding: 0 10px;
+}
+.rate2:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate2:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:20px;
+  color:#ccc;
+}
+.rate2:not(:checked) > label:before {
+  content: '★';
+}
+.rate2 > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate2:not(:checked) > label:hover,
+.rate2:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate2 > input:checked + label:hover,
+.rate2 > input:checked + label:hover ~ label,
+.rate2 > input:checked ~ label:hover,
+.rate2 > input:checked ~ label:hover ~ label,
+.rate2 > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+
+
+
+
+.paypal {
+	text-align: right;
+	padding-bottom: 40px;
+}
+.paypal button {
+	display: inline-block;
+	padding: 10px 20px 7px 20px;
+	background-color: #FFC439;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	width: 215px;
+}
+.paypal button:hover {
+	background-color: #f3bb37;
+  color:blue;
+}
+
